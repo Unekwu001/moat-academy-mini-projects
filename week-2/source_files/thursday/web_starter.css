@@ -1,0 +1,9 @@
+/**
+ * THis css sheet links to web_starter.html
+ * Author: Unekwu Shaibu.
+ * Date: August 11th, 2022.
+ */
+ 	.parent{display:flex;border:1px solid black}
+        #logo{width:20%;border:1px solid black}
+        #menu{width:80%; border:1px solid black}
+        #animation{background-color:black;color:#fff;padding:20px 0px}

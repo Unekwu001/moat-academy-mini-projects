@@ -1,0 +1,13 @@
+/**
+ * Author: Unekwu Shaibu
+ * Date:10th August, 2022
+ *
+ */
+        @font-face{font-family:"MrRubik";
+                                src:url('rubik/rubik-bold-webfont.ttf');
+                                src:url('rubik-lightitalic-webfont.ttf')}
+/*using the font face*/
+                h1,h2,h3{font-family: 'MrRubik', serif;}
+                p{font-family: 'Padauk', sans-serif;}
+
+

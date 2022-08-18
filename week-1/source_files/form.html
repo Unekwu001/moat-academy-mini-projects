@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>ePACTfarm - Contact Us</title>
+        </head>
+
+
+        <body>
+		<div align="center">
+			
+		<form action="registration.py" method="POST">
+			
+			<h2>Contact Us</h2>
+			<h3>Fill out the form below to learn more!</h3>	
+			<p>
+				<label for="oo">Full Name</label>
+				<input type="text" name="fullname" id="oo"placeholder="Enter your name here" />
+
+                                <label for="nice">Password</label>
+                                <input type="password" name="password" id="nice"/>
+
+                                <label for="ok">Email</label>
+                                <input type="email" name="email address" id="ok" placeholder="theo3456sample@gmail.com"/>
+                        </p>
+			
+			  <p>
+                                <label>Gender</label>
+				<input type="radio" name="gender" value="male"  id="gender1"/>
+				<label for="gender1">male</label> 
+				<input type="radio" name="gender" value="female"  id="gender2"/>
+				<label for="gender2">female</label>  
+                        </p>
+			<p>
+			<label><b>Cities Visited</b></label>
+				<br>
+				<input type="checkbox" name="city1" value="kano"/>
+				<label>Kano</label>
+                        	<br>
+                        	<input type="checkbox" name="city2" value="Lagos"/>
+				<label>Lagos</label>
+                       	 	<br>
+                        	<input type="checkbox" name="city3" value="Aba"/>
+				<label>Aba</label>
+			</p>
+
+
+			<p>
+				<label>Upload your Resume</label>
+				<input type="file" name="resume" multiple="3">
+
+			</p>
+			<p>
+				<input type="reset" name="reset" value="RESET"/>
+			</p>
+
+			<p>
+                                <input type="submit" name="submit" value="SEND"/>
+                        </p>
+
+			<p>
+				<label>Enter your comments</label>
+				<textarea name="message" rows="10" cols="60"></textarea>
+
+			</p>
+
+			<p>
+			<label>Your state</label>
+				<select name="state">
+					<option value="">Choose State</option>
+					<option value="1">Lagos</option>
+					<option value="2">Cross river</option>
+					<option value="3">Benue</option>
+					<option value="4">Nasarawa</option>
+					<option value="5">kogi</option>
+				</select>
+
+			</p>
+
+			<p>
+			<input type=color name="color">
+			<input type="date" name="dateofbirth">
+			</p>
+
+		</form>
+
+		</div>
+
+        </body>
+
+</html>
+

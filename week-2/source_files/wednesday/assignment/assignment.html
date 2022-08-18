@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment</title>
+		<style>
+			body{background-image:url("banner.jpg");height:600px;background-repeat:no-repeat;
+				background-attachment:fixed;background-position:20% 65%;
+				background-size:cover;}
+			a{text-decoration:none;color:white}
+			#matchfix{height:20px;margin-left:170px;}
+			#bgoverlay{height:inherit;background-color:rgb(0,0,0,0.3);margin:0px;border:0px}
+			img{height:15px;width:20px;margin-top:15px}
+			div{color:white}
+			div ul li {display:inline-block;text-align:center;;width:80px;color:white;}
+			ul{margin-left:650px;margin-bottom:-40px}
+			#pull{margin-top:-450px; margin-left;100px;margin-right:60px;height:350px}
+			input{background-color:#D3D3D3;border:none;height:25px;width:340px;margin-left:40px}
+			form h3{height:25px;width:345px;margin-left:40px;text-align:center}
+                </style>
+	</head>
+
+	<body>
+		<!--Menu bar-->
+		<div id="topbar">
+                        <ul>
+				<li><a href="morgan.html">Home</a></li>
+				<li><a href="morgan.html">About Us</a></li>
+				<li><a href="morgan.html">Services</a></li>
+				<li><a href="morgan.html">Stats</a></li>
+				<li><a href="morgan.html">Testimonials</a></li>
+				<li><a href="morgan.html">Subscribe</a></li>
+                        </ul>
+                 </div>
+		<!--Matchfix Header-->
+		<div id="bgoverlay">
+			<a id="matchfix" href="assignment.html"><img src="gift.png"> Match Fix</a>
+		</div>
+		<!--Mother div of both Matromonial search div and register box-->
+		<div id="pull"style="display:flex;flex-direction:row;justify-content:space-between;text-align:start">
+			<!--Matrimonial search-->
+			<div style="width:60%;margin-left:60px">
+				<h1>Matrimonial search</h1>
+				<h2>Best Matching Couples</h2>
+				<p>Welcome to Matchfix. A place to find true love that leads to marriage. Try out our search
+				engine and see who we have for you</p><p>Read More</p>
+			</div>
+			<!--Register box-->
+			<div style="background-color:white;width:35%;align:text-align:center">
+				<form  action="registration.py" method="POST" style="color:black;">
+					<h3>Register & Join our Matrimony</h3>
+					<p><input type="text" name="name" placeholder="Your name"/></p>
+					<p><input type="email" name="email" placeholder="Your Email Id"/></p>
+					<p><input type="tel" name="tel" placeholder="Contact Number"/></p>
+					<p><input type="text" name="gender" placeholder="Gender"</p>
+
+					<h3 style="background-color:#DC143C;color:white;text-align:center">Get started</h3>
+					<p style="margin-left:35px">By registering, you agree to our <span style="color:#DC143C">Terms and Conditions<span></p>
+
+				</form>
+
+			</div>
+		</div>
+		
+	</body>
+</html>

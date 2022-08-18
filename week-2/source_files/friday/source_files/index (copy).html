@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Smash it</title>
+		<meta name="viewport" content="width=device-width"/>
+		<meta name="viewport" content="height=device-height"/>
+		<meta name="author" content="Unekwu Shaibu"/>
+		<meta name="keywords" content="tech competition,debug, debug code, coding competition,coding events,technology competition"/>
+		<meta name="description" content="Debug is Africa's biggest coding competition.Over the years, we have breed and empowered 
+						over 6000+ techpreneurs across subsaharan Africa"/>
+		<style type="text/css">
+			@font-face{font-family:"yatra";src:url('fonts/YatraOne-Regular.woff')}
+			@font-face{font-family:"Amita";src:url('fonts/Amita-Regular.woff')}
+			#wrapper{text-align:center}
+			#sticky{height:75px;background-color:white;width:inherit;display:flex;flex-direction:row;position:sticky;top:0px;
+			justify-content:space-between;text-align:center;border:1px grey;color:black;text-decoration:none}
+			.menu li{display:inline-block;width:138px;text-align:center;padding:20px 0px 0px 0px;margin:4px;text-decoration:none}
+			.menu li a{text-decoration:none}
+			#regbotton{padding:10px 1px 1px 0px;border-radius:80px 80px 80px 80px;}
+			#debug-logo{height:48px;width:195px;}
+			#divlogo{width:15%;}	
+			#divmenu{width:85%;height:75px;}
+			#banner{height:550px;width:inherit;background-image:url("images/banana.jpg");background-size:cover;
+				background-attachment:fixed;background-repeat:no-repeat;background-position:right;}
+			#overlay{height:inherit;width:inherit;background-color:rgb(0,0,0,0.5);}
+			#hanger{padding-top:2px;font-family:'Ubuntu',sans-serif;position:sticky;top:0px;border:}
+			#live{position:absolute;top:3px;left:6px;background-color:red;color:white;height:30px;width:100px;
+				text-align:center;border-radius:0px 80px 110px 0px;}
+			p,li{font-family:'Ubuntu',sans-serif;}
+			.writeonbanner{text-align:center;color:white;font-size:30px;font-family:'Ubuntu',cursive;padding-top:20px}
+			li:hover{border-bottom:3px solid brown;}
+			#regbotton:hover{background-color:red;color:white;border-bottom:none;padding-bottom:9px}
+			#blankwhite1{height:550px;width:inherit;background-color:inherit}
+			#movein{height:250px;width:75%;background-color:black;color:white;border-radius:30%;display:flex;
+				justify-content:space-around;text-align:center;padding-top:100px;margin-left:150px;margin-top:250px}
+			#movein div{height:100px;width:20%;border-radius:15%;background-color:rgb(51,51,51);color:white;font-size:50px;
+				font-family:'Ubuntu'}
+			h1,h2,h3,h4,h5{font-family:'Ubuntu'}
+			#movein div h2{margin:0px;padding:0px;}
+			#movein div h5{font-size:30px;padding:9px;margin:0px;}
+			#grandfinale{color:white;font-family:'Ubuntu';font-size:25px;animation:blinkingBackground 1s infinite;
+				width:300px;border-radius:30%;padding:1px;text-align:center;margin-left:480px;margin-top:-100px;}
+			@keyframes blinkingBackground{0%{background-color:yellow;}25%{background-color:blue;}50%{background-color:orange;}}
+			#about{height:500px;text-align:center;font-size:30px;margin-bottom:0px;padding-bottom:0px}
+			#about p{font-size:30px;margin:10px 100px 10px;font-family:'Nunito Sans', sans-serif;margin-bottom:0px}
+			#prizes{height:500px;background-color:rgb(200,200,200);display:flex;flex-direction:row;justify-content:space-around;
+				text-align:center;}
+			#prizes div{height:300px;width:30%;border-radius:20%;background-color:white;color:black;margin-top:90px;
+				text-align:center}
+			#headerprize{text-align:center;font-size:25px}
+			#headerprize h2{height:inherit;}
+			#firstprize{background-color:red;}
+			#prizes div img{height:150px;width:150px}
+			#video{text-align:center;margin-top:180px}
+			#containjudgesandheader{height:900px;margin-top:280px;}
+			#judges{height:850px;background-color:rgb(240,240,240);display:flex;flex-direction:row;justify-content:space-around;
+				flex-wrap:wrap;padding-top:20px}
+			#headerjudges{text-align:center}
+			#judges div {width:30%;height:100px;text-align:center;font-family:'yatra',sans-serif;color:rgb(51,51,51);}
+			#judges div h3,#judges div h5,#judges div p{margin:0px;padding:0px}
+			#judges div img{height:280px;width:300px;border-radius:50%}
+			#host{height:500px;background-color:rgb(40,40,40);text-align:center;color:rgb(230,230,230);padding-top:5px;
+				text-align:center;font-size:20px;font-family:'yatra'}
+			#host img{border-radius:30%;height:300px;width:400px;}
+			#host h2{margin-bottom:0px;padding-bottom:0px}
+			#partners{margin:50px 300px 0px;height:400px;display:flex;justify-content:space-around;flex-wrap:wrap;}
+			#prtners div{height:inherit;width:50%}
+			#partners img{width:150px;height:70px}
+			#partnersheader{margin-top:5px;text-align:center;color:rgb(50,50,50);font-family:'Ubuntu', sans-serif;
+				font-size:20px;margin-top:200px;margin-bottom:100px}
+			#motherdiv-form{height:900px;background-image:url('images/formbanner.jpg');background-size:cover;
+				background-attachment:fixed;background-repeat:no-repeat;text-align:center;margin-top:150px}
+			#overlay{height:inherit;background-color:rgba(0,0,0,0.7)}
+			form{height:600px;margin:100px 300px 300px 100px;background-color:rgb(51,51,51);
+				border:1px solid black;font-size:13px;border:1px solid black; width:700px;padding-top:20px
+				;text-align:center;color:white}
+			input{width:200px;height:10px;margin:15px;padding:6px; border-radius:20%}
+			select{width:200px;height:30px;margin:15px;padding:6px; border-radius:20%}
+			#submit{width:200px;height:30px;margin:15px;padding:6px; border-radius:20%}
+			#reset{width:200px;height:30px;margin:15px;padding:6px; border-radius:20%}
+			#checkbox{width:15px;height:15px;margin:1px;padding:0px;}
+			#formrap{margin-top:20px;margin-left:175px}
+			form h1{font-size:25px;margin-bottom:50px;padding-bottom:50px}
+			#footer{background-color:rgb(5,5,5);display:flex;justify-content:center;flex-wrap:wrap;
+				position:absolute;top:7000px;
+				height:200px;width:98.8%;text-align:center}
+			#footer div{width:30%;height:90px;background-color:black;}
+			#media li{display:inline-block;width:50px;text-align:center;margin:1px;}
+			#media img{width:20px;height:20px;border-radius:50%;}
+			#trademark p,#contact p{font-size:15px;margin-bottom:0px;color:white}
+			a{text-decoration:none;color:rgb(0,0,0);}
+		</style>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<div id="wrapper">
+				<marquee id="hanger">Nigerian Chiamaka wins Ecowas inaugural Ag-Hackathon tornament 
+				held in Ghana. She overcame fajenyo and Moussa Sissoko of Senegal to win Nigeria's first Gold medal in the 
+				competition.
+				</marquee>
+				<div id="live">
+					<b>Live</b>
+				</div>
+			</div>
+			<!--logo and Menu inside sticky div--> <div id="sticky">
+				<div id="divlogo">
+					<p><img src="images/logo.png" id="debug-logo"></p>
+				</div>
+				<div id="divmenu">
+					<ul class="menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#headerprize">Prizes</a></li>
+						<li><a href="#headerjudges">Meet our Judges</a></li>
+						<li><a href="#footer">Contact Us</a></li>
+						<li id="regbotton"><a href="#motherdiv-form">Register</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="banner">
+				<div id="overlay">
+					<div class="writeonbanner">
+						
+						<h2>Welcome to Africa's largest tech battleground !</h2>
+						<h5>+500 Contestants</h5>
+						<h5>Just 3 spots!</h5>
+						
+					</div>
+				</div>
+			</div>
+			<div id="blankwhite1">
+				<div id="movein">
+                                	<div>
+                                        	<h2>02</h2>
+                                        	<h5>Days</h5>
+                               		</div>
+                                	<div>
+                                        	<h2>00</h2>
+                                        	<h5>Hours</h5>
+                                	</div>
+                                	<div>
+                                        	<h2>36</h2>
+                                        	<h5>Minutes</h5>
+                                	</div>
+                                 	<div>
+                                        	<h2>45</h2>
+                                        	<h5>Seconds</h5>
+                                	</div>
+				</div>
+                        	<div id="grandfinale">
+					<h3>To the Grand Finale</h3>
+				</div>
+			</div>
+			 <div id="about" >
+				 <h2>About Debug.10.0</h2>
+				 <p>Debug.10.0 is Africa's biggest online coding and tech competition. Over the years, we have breed 
+					and empowered over 6000+ techpreneurs across subsaharan Africa. It consists of three-hour rounds of a 
+						variety of algorithmic challenges designed by Google engineers. Participants can compete in 
+						one or all online rounds held throughout the year, and will have the opportunity to develop 
+						and grow their programming abilities while getting 
+						a glimpse of technical skills needed for an enhanced career. 
+				 </p>
+
+			</div>
+			<div id="headerprize">
+				<h2>Prizes</h2>
+			</div>
+			<div id="prizes">
+				<div>
+					<h2>2 million Dollars</h2><p>First Runner up</p>
+					<img src="images/silver.png">
+				</div>
+				<div id="firstprize">
+					<h2>5 million Dollars</h2><p>Champion</p>
+					<img src="images/gold.png">
+				</div>
+				<div>
+					<h2>1 million Dollars</h2><p>Second Runner up</p>
+					<img src="images/bronze.png">
+				</div>
+			</div>
+			<div id="video">
+				<h1>Hear from Our 2021 participants</h1>
+				<iframe width="860" height="515" src="https://www.youtube.com/embed/OyFwYGcyAfQ" title="YouTube 
+						video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+						encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe>
+			</div>
+			<div id="containjudgesandheader">
+				<div id="headerjudges">
+				 <h1>Meet Our Judges</h1>
+				</div>
+				<div id="judges">
+					<div>
+						<img src="images/judgee.jpg">
+						<h3>Aquila Timmons</h3>
+						<h5>Python stack</h5>
+						<p>Senior Site Reliability Engineer, Microsoft (Canada)</p>
+					</div>
+					<div>
+						 <img src="images/judge2.jpg">
+                                                <h3>Ojochegbe Anita</h3>
+                                                <h5>Golang/Ruby stack</h5>
+						<p>Cloud Solutions Architect, Amazon (USA)</p>
+					</div>
+					<div>
+						 <img src="images/judge9.jpg">
+                                                <h3>Dembele Mahmod</h3>
+                                                <h5>Nodejs stack</h5>
+						<p>Senior Systems Engineer, Canonical (Egypt)</p>
+					</div>
+					<div>
+						 <img src="images/judge8.jpg">
+                                                <h3>Ohikere Japheth</h3>
+                                                <h5>.NET stack</h5>
+						<p>Lead Web Developer, Apple (Ghana)</p>
+					</div>
+					<div>
+						 <img src="images/judge7.jpg">
+                                                <h3>Brahimi Sanders</h3>
+                                                <h5>PHP stack</h5>
+						<p> Senior BackEnd Engineer, Microsoft (Nigeria)</p>
+					</div>
+				</div>
+			</div>
+			<div id="host">
+				<h1>Host</h1>
+				<img src="images/judge1.jpg">
+				<h2>Fumilayo Dada</h2><span>(Lead Devops Engineer, Google)</span>
+			</div>
+			<div id="partnersheader"><h1>Our Partners</h1</div>
+			<div id="partners">
+				<div><img src="images/partner1.png"></div>
+				<div><img src="images/partner2.png"></div>
+				<div><img src="images/partner3.png"></div>
+				<div><img src="images/partner4.png"></div>
+				<div><img src="images/partner5.png"></div>
+				<div><img src="images/partner6.png"></div>
+				<div><img src="images/partner7.png"></div>
+				<div><img src="images/partner8.png"></div>
+				<div><img src="images/partner9.png"></div>
+			</div>
+			<div id="motherdiv-form">
+				<div id="overlay">
+					<div id="formrap">
+					<form Target="register.php" method="POST">
+						<h1>Register</h1>
+						<p><u>Please ensure you fill properly</u></p>
+						<label>Full Name:</label>
+						<input type="text" name="name" placeholder="Jacobs Adama">
+						<label>Phone number:</label>
+						<input type="number" name="phone number" placeholder="08168420155 "><br>
+						<label>Contact Address:</label>
+						<input type="text" name="contact address" placeholder="No 12, Olabisi street lagos.">
+						<label>Email:</label>
+						<input type="email" name="email" placeholder="jacobsadama@gmail.com"><br>
+						<label>Country:</label>
+						<select name="country">
+							<option value="">Select your country</option>
+							<option value="nigeria">Nigeria</option>
+							<option value="ghana">Ghana</option>
+							<option value="kenya">Kenya</option>
+							<option value="egypt">Egypt</option>
+							<option value="morocco">Morocco</option>
+							<option value="south africa">South Africa</option>
+							<option value="ethiopia">Ethiopia</option>
+							<option value="cameroon">Cameroon</option>
+							<option value="zambia">Zambia</option>
+						</select>
+						<label>Region:</label>
+						<select name="region">
+                                                        <option value="">Select your Region</option>
+                                                        <option value="north africa">North Africa</option>
+                                                        <option value="west africa">West Africa</option>
+                                                        <option value="east africa">East Africa</option>
+							<option value="southern africa">Southern Africa</option>
+							<option value="central africa">Central Africa</option>
+						</select><br>
+						<label>Password:</label>
+						<input type="password" name="password" placeholder="Enter a strong password"><br>
+						<label>Retype Password:</label>
+						<input type="password" name="password" placeholder="Retype your password"><br>
+						<label>Specialization:</label>
+						<select name="stack">
+							<option value="">Select your Specialization</option>
+							<option value="devops">Devops Engineering</option>
+							<option value="cloud">Cloud Computing</option>
+							<option value="systems">Systems Engineering</option>
+							<option value="frontend">Web Frontend Engineering</option>
+							<option value="mobile">Mobile Development</option>
+							<option value="sre">Site Reliability Engineering</option>
+							<option value="backend">Web Backend Engineering</option>
+							<option value="fullstack">Full-stack Web Development</option>
+						</select>
+						<label>Language:</label>
+						<select name="language">
+                                                        <option value="">Select your language of choice</option>
+                                                        <option value="php">PHP</option>
+                                                        <option value="python">Python</option>
+                                                        <option value="C">C/C++/#C</option>
+                                                        <option value="golang">Golang</option>
+                                                        <option value="ruby">Ruby</option>
+                                                        <option value="bash">Bash/Z-shell</option>
+                                                        <option value="java">Java</option>
+                                                        <option value="javascript">Javascript</option>
+						</select><br>
+
+						<input type="checkbox" name="checkbox" id="checkbox"> I have read the terms and conditions.<br>
+						<input type="reset" name="reset" value="CLEAR ALL" id="reset">
+						<input type="submit" name="submit" value="SUBMIT" id="submit">
+                                	</form>
+					</div>
+					
+				</div>
+			</div>
+			<div id="footer">
+				<div id="media">
+					<ul>
+						<li><a href=""><img src="images/facebook.png"></a></li>
+						<li><a href=""><img src="images/linkedin.png"></a></li>
+						<li><a href=""><img src="images/twitter.png"></a></li>
+						<li><a href=""><img src="images/instagram.jpeg"></a></li>
+
+					</ul>
+				</div>
+				<div id="trademark">
+					<p>Debug.10.0 is a registered subsidiary of Debug Inc</p>
+					<p>3rd Floor, Donne Investment House, Plot 1332, Ralph Shodeinde Street, 
+					 Federal Ministry of Finance, Central Business District, Nairobi, Kenya.</p>
+					
+				</div>
+				<div id="contact">
+					<p>2022 Copyrights</p>
+					<p>In partnership with Smashit. www.debug.10.0.com.ng</p>
+				</div>
+
+			</div>
+		</div>
+	</body>
+
+
+
+
+</html>
+
