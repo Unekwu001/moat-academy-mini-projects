@@ -1,0 +1,29 @@
+<html>
+        <head>
+               
+                <title>condi JS</title>
+                <style>
+
+                </style>
+                <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        </head>
+        <body id="yoo" style="background-color:orange">
+		<script type="text/javascript">
+
+			var k = prompt("Enter a color");
+
+			if (k == ''|| k == null)
+			{
+				alert('you have not supplied anything');
+				document.getElementById('yoo').style.backgroundColor= 'brown';
+			}
+			else
+			{
+				document.getElementById('yoo').style.backgroundColor= k;
+			}
+		</script>
+        </body>
+</html>
+

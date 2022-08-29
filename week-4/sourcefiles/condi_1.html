@@ -1,0 +1,59 @@
+<html>
+        <head>
+               
+                <title>condi JS</title>
+                <style>
+
+                </style>
+                <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        </head>
+        <body>
+		
+		<form>
+		<h2>2019 RESULT UTME CHECKER</h2>
+		<p id="ppp"></p>
+		<label>Have you written exam yet</label>
+		<select name="ki" id="yn">
+		
+		<option value=""> select an option</option>
+		<option value="yes">yes</option>
+		<option value="no"> no</option>
+
+		</select>
+		<select name="vi" id="center">
+
+                <option value=""> select a center</option>
+                <option value="lagos">lagos</option>
+                <option value="kano">kano</option>
+
+                </select>
+		<button type="button" onclick="
+			var q = document.getElementById('yn').value;
+			 var w = document.getElementById('center').value;
+			
+			if(q == '' && w == '')
+			{
+				alert('please make a selection');
+			}
+
+			else if(q =='yes' && w == 'lagos')
+			{
+				alert('your score is 320');
+				document.getElementById('ppp').innerHTML = 'feedback on assessment: Total Score is 320';
+			}
+			else
+			{
+				alert('how do you expect a result when you have not written exams');
+				      
+			}
+
+			
+			">
+			Get my result</button>
+		</form>
+		  
+        </body>
+</html>
+

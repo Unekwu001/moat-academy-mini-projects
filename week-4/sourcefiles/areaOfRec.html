@@ -1,0 +1,35 @@
+<html>
+        <head>
+               
+                <title>condi JS</title>
+                <style>
+
+                </style>
+                <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        </head>
+	<body>
+		<label>Length</label><br>
+		<input name="length" id="length"><br>
+
+		<label>Breath</label><br>
+                <input name="breath" id="breath">
+
+		<button
+			onclick="
+				rectangleArea()
+				">
+	
+		Calculate Area</button>
+		<script type="text/javascript" language="javascript">
+			function rectangleArea()
+			{
+				length = document.getElementById('length').value
+				breath = document.getElementById('breath').value
+				area = length * breath;
+				alert('The area of a rectangle is ' + area);
+			}
+		</script>
+	</body>
+</html>

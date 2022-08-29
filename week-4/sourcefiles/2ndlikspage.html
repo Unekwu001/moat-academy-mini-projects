@@ -1,0 +1,28 @@
+<html>
+        <head>
+               
+                <title>condi JS</title>
+                <style>
+
+                </style>
+                <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        </head>
+	<body>
+		<input id="jo" value="like page" type="button" onclick="
+					like()">
+		<script type="text/javascript" language="javascript">
+                      	q = 1;
+                        function like()
+			{
+			if (q == 1)
+				document.getElementById('jo').value = q + " like"
+			else
+				document.getElementById('jo').value = q + " likes" 
+			q++;
+                        }
+                </script>
+
+	</body>
+</html>

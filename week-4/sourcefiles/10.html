@@ -1,0 +1,21 @@
+<html>
+        <head>
+                <title>onclick + getElementById + img</title>
+                <style>
+
+                </style>
+                <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        </head>
+        <body>
+                <img src="k.jpg" id="im" height="90" width="90">
+                <button onclick="
+                        var h = document.getElementById('im').height;
+			var w = document.getElementById('im').width;
+                        alert('image is '+ h + ' x ' + w + ' in size');">
+                        Check dimension
+                </button>
+        </body>
+</html>
+

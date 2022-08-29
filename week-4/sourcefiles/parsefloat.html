@@ -1,0 +1,64 @@
+<html>
+        <head>
+               
+                <title>condi JS</title>
+                <style>
+
+                </style>
+                <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        </head>
+	<body>
+		<p id="yoo"></p>
+		<label>Length</label><br>
+		<input name="length" id="length"><br>
+
+		<label>Breath</label><br>
+                <input name="breath" id="breath">
+
+		<button
+			onclick="
+				add()
+				">add
+		</button>
+		<button
+                        onclick="
+                                subtract()
+                                ">subtract
+		</button>
+		<button
+                        onclick="
+                                modulus()
+                                ">modulus
+		</button>
+
+		<script type="text/javascript" language="javascript">
+			function add()
+			{
+				var length = document.getElementById('length').value
+				var breath = document.getElementById('breath').value
+				var add = parseFloat((length),10) + parseFloat((breath),10);//you could also use Number((length))to convert
+				alert(add);
+			}
+			function subtract()
+                        {
+                                var length = document.getElementById('length').value
+                                var breath = document.getElementById('breath').value
+                                var subtract = length - breath;
+				 alert(subtract);
+
+                        }
+			function modulus()
+                        {
+                                var length = document.getElementById('length').value
+                                var breath = document.getElementById('breath').value
+                                var modulus = length % breath;
+				 alert(modulus);
+
+                        }
+
+
+		</script>
+	</body>
+</html>

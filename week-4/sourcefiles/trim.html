@@ -1,0 +1,38 @@
+<html>
+        <head>
+               
+                <title>condi JS</title>
+                <style>
+
+                </style>
+                <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        </head>
+        <body>
+		  <script type ="text/javascript" language="javascript">
+			  
+			 var sport = prompt('Enter sport');
+
+			  switch (sport.toLowerCase().trim())
+			  //trim is responsible for trimming the input incases of space  included before and after
+			  	{
+					case 'football':
+						alert('Football news: Ronaldo up for sale');
+						break;
+					case 'basketball':
+                                                alert('basketball news: D tigers are good to go');
+                                                break;			
+					case 'golf':
+                                                alert('golf news: tiger woods is back');
+                                                break;
+					case 'boxing':
+                                                alert('kamaru lost');
+                                                break;
+					default:
+						alert('news not found, type the correct sport');									  
+				}
+		  </script>
+        </body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>assignment</title>
+	</head>
+	<body>
+		<div>
+			<h1>Nigeria Polls</h1>
+		</div>
+		<!--a voting program for all nigerian users. only for other countries if user is above 18 years of age.-->
+		<script type="text/javascript" language="javascript">
+			
+			//defining the variable
+			var country = prompt("Enter your country");
+			
+			//this code block alerts users with NULL entries
+			if(country.toLowerCase().trim() == "")
+			{
+				alert("please reload the page and make sure you enter a value for country");
+			}
+
+			var age = parseInt(prompt("Enter your age","18"),10);//defining the variable
+
+			if(age < 0)
+			{
+				alert("please reload the page and make sure you enter a value for age");
+			}
+
+			//this code block checks eligibity of users	
+			if(country.toLowerCase().trim() == "nigeria")
+			{
+				alert("You can vote");
+			}
+			else if(country.toLowerCase().trim() != "nigeria" && age > 18 )
+			{
+				alert("You are not from Nigeria but you are elible to vote because you are 18+");
+			}
+			else if(country.toLowerCase().trim() != "nigeria" && age <= 18)
+			{
+				alert("You cannot vote");
+			}
+			else
+			{
+				alert('You did not fill the prompt correctly');
+			}
+		</script>
+	</body>
+</html>

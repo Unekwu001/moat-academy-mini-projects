@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>My assignment</title>
+		<style type="text/css">
+			span{margin-right:10vw;}
+			form{text-align:center;margin:10vh 8vw 10vh;background-color:rgb(210,250,0);padding:10vh 10vh;border-radius:12%;}
+			button{background-color:white;width:10vw;height:4vh;border-radius:10%;margin:5px}
+			input{margin-right:10vw}
+			#ma{margin-left:2vw}
+			#en,#bi{margin-left:1.2vw}
+			#fr{margin-left:1.7vw}
+			input:hover{background-color:blue;color:white}
+			label{margin:9vw}
+			#getresult:hover{background-color:skyblue;color:black}
+			#getresult{margin-right:6vw;background-color:orange;color:blue}
+			#scoreheader{margin-right:}
+			#headers{width:94%;text-align:center}
+			#imgspan{margin-left:50vw}
+			
+		</style>
+	</head>
+	<body>
+
+		
+		<form>
+			<h1>SCORE CARD</h1>
+			<!--headers-->
+			<div id="headers">
+			<label id="subjectheader"><b>Subject</b></label>
+			<label id="scoreheader"><b>Score</b></label>
+			<label><b>Grade</b></label><br>
+			</div>
+
+			<!--English line-->
+			<span>English</span>
+			<input  id="en"   onkeyup=" eng = grader(this.value);
+				document.getElementById('english').innerHTML = eng ;">
+			<button type="button"onclick="return false;" id="english"></button><br>
+			
+			<!--Maths line-->
+			<span>Maths</span>
+                        <input id="ma"  onkeyup=" mat = grader(this.value);
+                                document.getElementById('maths').innerHTML = mat;">
+			<button type="button"onclick="return false"; id="maths"></button><br>
+
+			<!--Chemistry line-->
+			<span>Chemistry</span>
+                        <input id="ch"  onkeyup=" chem = grader(this.value);
+                                document.getElementById('chemistry').innerHTML = chem;">
+			<button type="button"onclick="return false"; id="chemistry"></button><br>
+			
+			<!--Biology line-->
+			<span>Biology</span>
+                        <input id="bi" onkeyup=" bio = grader(this.value);
+                                document.getElementById('biology').innerHTML = bio;">
+			<button type="button"onclick="return false"; id="biology"></button><br>
+			
+			<!--french line-->
+                        <span>French</span>
+                        <input id="fr" onkeyup=" fre = grader(this.value);
+                                document.getElementById('french').innerHTML = fre;">
+			<button type="button"onclick="return false"; id="french"></button><br><br>
+			
+			<!--get result line-->
+			<button id="getresult" type="button" onclick="
+				document.getElementById('total').innerHTML = total();
+				document.getElementById('av').innerHTML = average5(total());
+				document.getElementById('remark').innerHTML = getRemarks(average5(total()));
+				
+				emoojee(average5(total()));
+				">Get Result
+			</button><br>
+
+			<!--total line-->
+			<span>TOTAL</span>
+			<span id="total"></span><br>
+			
+			<!--Average line-->
+			<span>Average</span>
+			<span id="av"></span><br>
+
+			<!--Remark line-->
+			<div id="remarkheader">
+				<span><b>Remark:</b></span>
+			</div><br>
+			<b><span id="remark">You are welcome. Kindly enter your scores.</span></b><br>
+			<span id="imgspan"><img src="images/default.png" width="85vw" height="85vh" id="emoji"></span>
+		</form>
+		<script type="text/javascript" src="js/project.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+        <head>
+               
+                <title>external</title>
+                <style>
+
+                </style>
+                <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        </head>
+	<body>
+		<div class="container">
+			<div id="success">
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-9 offset-1">
+					<form action="registration.php" method="POST">
+						<label>Username:</label><br>
+						<input type="text" name="name" class="form-control " id="name" >
+						<label>Password:</label><br>
+                                                <input type="password" name="password" class="form-control " id="firstpwd" >
+						<label>Confirm Password:</label><br>
+						<input type="password" name="password" class="form-control " id="secondpwd"><br>
+					
+						<input type="submit" name="validation" value="Register" class="btn btn-primary"
+										       onclick="check_reg(); return false;">
+					</form>
+				</div>
+			</div>
+		</div>
+	     <script  type="text/javascript" src="js/assignment.js"></script>
+        </body>
+</html>
+
+
