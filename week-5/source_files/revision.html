@@ -1,0 +1,31 @@
+<!--DOCTYPE html-->
+<html>
+        <head>
+                <title>Monday</title>
+        </head>
+        <body>
+		<input type="password" value="" id="koo">
+		<button id ="jo" onclick="
+			     showpwd()
+			     ">Show button
+		</button>
+                <script type="text/javascript" language="javascript">
+
+			function showpwd()
+			{
+ 				var x = document.getElementById("koo");
+
+  				if (x.type === "password")
+				{
+					x.type = "text";
+				} 
+				else 
+				{
+					x.type = "password";
+				}
+			}
+			
+                </script>
+        </body>
+</html>
+~         

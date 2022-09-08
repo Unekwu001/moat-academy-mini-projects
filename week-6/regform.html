@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>regform.html</title>
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+		<style>
+			@font-face{font-family:"Amita";src:url('fonts/Amita-Regular.woff')}
+			*{font-family:"Amita","sans-serif";}
+			form{text-align:center;margin:4vh 7vw 0vh;background-color:rgb(27,50,160);border-radius:25%;padding:5%}
+			#celebrate{margin:0vh 15vw 5vh;color:rgb(227,250,0);background-color:rgb(0,0,0);padding:2vh 2vw 2vh;border-radius:
+			20%}
+			h4,h5{color:rgb(227,250,0);}
+			input{margin:}
+			label{color:white}
+			 .cbox{margin:1vw}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+				 <form action="birthday_reg.php" method="POST">
+
+
+					<div class="row">
+
+						<div class="col mt-5">
+							<h2 id="celebrate">Celebrate with Me @ 100</h2>
+							<hr style="height:3vh">
+							<h4>Guest Invitation form</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<label>Guest Full Name</label>
+							<input type="text" name="full_name" class="form-control">
+						</div>
+						 <div class="col-4">
+                                        	        <label>Guest Phone number</label>
+                                        	        <input type="text" name="phone_number" class="form-control">
+                                        	</div>
+						 <div class="col-4">
+                                        	        <label>Guest email</label>
+                                        	        <input type="email" name="email" class="form-control">
+                                        	</div>
+						 <div class="col-4 offset-2 mt-4">
+                                        	        <label>Guest's gender </label>
+							<select name="gender" class="form-control">
+								<option value=""> Select your gender</option>
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+							</select>
+                                        	</div>
+						 <div class="col-4 offset-1 mt-4">
+                                        	        <label>Guest's state</label>
+							<select type="text" class="form-control">
+								<option value="">Select your state</option>
+								<option value="1">Abia</option>
+								<option value="2">Adamawa</option>
+								<option value="3">Akwa Ibom</option>
+								<option value="4">Anambra</option>
+								<option value="5">Bauchi</option>
+								<option value="6">Bayelsa</option>
+								<option value="7">Benue</option>
+								<option value="8">Borno</option>
+								<option value="9">Cross River</option>
+								<option value="10">Delta</option>
+								<option value="11">Ebonyi</option>
+								<option value="12">Edo</option>
+								<option value="13">Ekiti</option>
+								<option value="14">Enugu</option>
+								<option value="15">Gombe</option>
+								<option value="16">Imo</option>
+								<option value="17">Jigawa</option>
+								<option value="18">Kaduna</option>
+								<option value="19">Kano</option>
+								<option value="20">Katsina</option>
+								<option value="21">Kebbi</option>
+								<option value="22">Kogi</option>
+								<option value="23">Kwara</option>
+								<option value="24">Lagos</option>
+								<option value="25">Nassarawa</option>
+								<option value="26">Niger</option>
+								<option value="27">Ogun</option>
+								<option value="28">Ondo</option>
+								<option value="29">Osun</option>
+								<option value="30">Oyo</option>
+								<option value="31">Plateau</option>
+								<option value="32">Rivers</option>
+								<option value="33">Sokoto</option>
+								<option value="34">Taraba</option>
+								<option value="35">Yobe</option>
+								<option value="36">Zamfara</option>
+								<option value="37">FCT</option>
+								<option value="38">Foreign</option>
+							</select>
+						 </div>
+					</div>
+					<div class="row">
+						<div class="col-6 offset-3 mt-4">
+							<label>Enter your password :&nbsp;</label>
+							<input type="password" name="password" class="form-control-sm">
+							
+							<label>Retype your password</label>
+							<input type="password" name="password" class="form-control-sm">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 mt-5">
+							<h5 style="margin-bottom:2vh">Do you want to bring me a gift ?</h5>
+
+							<input  type="checkbox" name="Cloth" value="Cloth" class="cbox">
+							<label> Cloth</label>
+							<input type="checkbox" name="Cash" value="Cash" class="cbox">
+							<label> Cash</label>
+							<input type="checkbox" name="Blender" value="Blender" class="cbox">
+							<label>Blender</label>
+	
+							<input type="checkbox" name="Shoe" value="Shoe" class="cbox">
+							<label>Shoe</label>
+
+							<input type="checkbox" name="Car" value="Car" class="cbox">
+							<label>Car</label>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col mt-5">
+							<input type="reset" name="reset">
+							<input type="submit" name="submit" style="margin-left:2vw">
+						</div>
+
+					</div>	
+				</form>
+			</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

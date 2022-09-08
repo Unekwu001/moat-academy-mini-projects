@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>join function for arrays</title>
+        </head>
+
+        <body>
+
+                <script type="text/javascript" language="javascript">
+			//syntax
+
+
+
+
+			//METHOD ONE
+				// fullname = new Array('OBJ','IBB','GEJ','JJ');
+			//var fullname = ['neku', 'Tolani','Dani','James'];
+			
+			//.join() function converts the array elements to string using a comma.you may wish to seperate the strings 
+			//with dash by including the seperator as arguments.
+			//k = fullname.join();
+			//alert(k);
+
+			//toString();
+			//document.write(fullname.toString());
+			
+			//.sort() this sorts the elements in alphabetical order for strings.
+			//v = fullname.sort();
+			//alert(v);
+
+			//.pop() this removes the last element of an array
+			//k = fullname.pop();
+			//alert(k);
+			
+			//this tells you the count of the array.
+			//k = fullname.length;
+			//alert(k);
+
+			//.push() this helps u add sny string.
+			//k = fullname.push('mire');
+			//alert(fullname);
+
+			// .isArray(); tells you if an element is an array;
+			
+			function builder()
+			{
+				var superheroes = [];
+
+				x = 0; 
+				while(x < 3)
+					{
+						if(x == 0)
+							{
+							var hero = prompt('Enter your first favorite character');
+							superheroes.push(hero);
+							}
+						else if(x == 1)
+							{
+                                                        var hero = prompt('Enter your second favorite character');
+                                                        superheroes.push(hero);
+                                                        }
+						else
+							{
+                                                        var hero = prompt('Enter your third favorite character');
+                                                        superheroes.push(hero);
+                                                        }
+
+					x++;
+					}	
+				confirm("Are you okay with the super heroes " + superheroes.toString());
+			}
+
+                </script>
+		 <button type="button" onclick="
+			builder()
+				     ">Ready to go ?</button>
+
+
+
+        </body>
+</html>
+

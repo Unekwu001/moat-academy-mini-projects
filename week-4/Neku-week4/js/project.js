@@ -106,6 +106,3 @@ function emoojee(a)
 
 
 
-
-
-

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		       <form>
+				<h1>test form<h1>
+			       <input type="text" name="name" id = "vv">
+			       <input type="email" name="email" id="tt" >
+			       <button type="submit" onclick="
+						     function validate()
+						     {
+							v = document.getElementById('vv').value ;
+							t = document.getElementById('tt').value ;
+				
+							     if (v == '' || t == '')
+							     { 
+							     	alert('please fill all blanks')
+							     return false;
+						    	     }
+						    	 else
+						    	     {
+						     		alert('you are welcome'  + '. You typed ' + v + ' and ' + t);
+						     	     }
+						     }
+						     return validate();
+				       ">
+			      submit </button>
+		       </form>
+
+	</body>
+</html>

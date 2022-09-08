@@ -1,0 +1,44 @@
+
+----------------ANSWER TO QUESTION 2----------------
+
+SELECT guest.guest_fullname AS fullname_Of_guest, guest.guest_phone AS phone_number_Of_guest FROM guest LEFT JOIN gift
+ON guest.guest_id = gift.guest_id
+WHERE gift.gift_name = "Cash" ;
+
+--OUTPUT--
+--Adedayo Kolawole with phone number 0804564667 --
+
+
+
+
+--------------ANSWER TO QUESTION 3-------------------
+
+SELECT * FROM guest LEFT JOIN state
+ON guest.guest_state = state.state_id
+WHERE state.state_name = "Zamfara" ;
+
+--OUTPUT--
+--Damilola Oni--
+
+
+
+--------------ANSWER TO QUESTION 4------------
+
+SELECT * FROM guest
+WHERE guest_gender = "Female" ;
+
+---OUTPUT---
+---Adedayo Kolawole, Damilola Oni, Janet Jackson---
+
+
+
+
+
+
+--------------ANSWER TO QUESTION 5---------------
+
+SELECT * FROM guest
+WHERE guest_phone = '';
+
+--OUTPUT--
+--Taribo West--
