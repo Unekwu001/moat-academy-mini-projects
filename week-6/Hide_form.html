@@ -1,0 +1,152 @@
+<html>
+        <head>
+                <title>AddClass with jquery
+                </title>
+                <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+                <style type="text/css">
+                        .squarebox{width:50vw;height:50vh}
+                        .tn{color:white;background-color:blue}
+                        .addborder{border:2px solid black}
+                        .padelement{padding:20px}
+                        #article{border:1px solid black}
+                </style>
+        </head>
+        <body>
+                <div class="container-fluid">
+			<div class="row">
+				<div class="col">
+				<!--	<h1>User's Registration</h1>
+
+					<button type="button" name="add" id="but">Add more fields</button>
+				</div>
+				<div id="address">
+				</div>
+				<div>
+				<button id="remove" class="btn btn-primary mt-4" >Remove fields</button>
+				</div>-->
+				<!--	<img src="images/A.png" class="img-fluid" id="mypix">
+					<button type="button" id="btnhide">Hide image</button>
+					<button id="btnfadein">fadein</button>
+					 <button id="btnshow">show</button>
+					  <button id="btnfadetoggle">fade toggle</button>
+					  <button id="btnfadeto">fade to</button>
+					  <button id="btnslidetoggle">slide Toggle</button>-->
+
+					  <div id="login">
+					  	<form>
+					               <input type="radio" name="rad" class="reg"><label>New user?</label> Register here<br>
+                                                       <input type="radio" name="rad" class="log"><label>existing user?</label> Login here
+
+						  
+							<h1>Login</h1>
+							<input type="text">
+							<input type="password">
+							<button>Login now</button>
+					  	</form>
+					  </div>
+					  <div id="register">
+					  	<form>
+						       <input type="radio" name="rad" class="reg"><label>New user?</label> Register here<br>
+                                        	       <input type="radio" name="rad" class="log"><label>existing user?</label> Login here
+
+
+                                                        <h1>Register</h1>
+                                                        <input type="text">
+                                                        <input type="password">
+                                                        <button>Register</button>
+                                          	</form>
+					  </div>
+				</div>
+			</div>
+                </div>
+                <script src="jquery/jquery.min.js"></script>
+
+                <script type="text/javascript" language="javascript">
+			$(document).ready(function(){
+							$('#register').hide()
+							$('.log').prop('checked',true)
+
+							$('.log').click(function(){
+								  	$('.log').prop('checked',true)
+                                                                        $('#login').show()
+									$('#register').hide()
+									$('.reg').prop('checked',false)
+                                                                        
+										})
+
+							 $('.reg').click(function(){
+									$('.reg').prop('checked',true)
+                                                                        $('#register').show()
+                                                                        $('#login').hide()
+                                                                        $('.log').prop('checked',false)
+                                
+										})
+                                                                      
+					     	   })
+
+						
+
+/*
+
+
+							$('#btnhide').click(function(){
+
+										$('#mypix').hide(1000,function(){
+
+											//document.write('End of show');
+											$('body').css('background-color','blue')														});
+										})
+							$('#btnfadein').click(function(){
+											$('#mypix').fadeIn();
+										})
+							 $('#btnshow').click(function(){
+											$('#mypix').show();
+
+										 })
+							$('#btnfadetoggle').click(function(){
+											$('#mypix').fadeToggle();
+
+										})
+							$('#btnfadeto').click(function(){
+											//fadeto takes 3 args
+											$('#mypix').fadeTo(10,0.4);
+
+
+										})
+							$('#btnslidetoggle').click(function(){
+                                                                                        
+											$('#mypix').slideToggle('slow',function(){
+												$(this).css('background-color','yellow')
+
+
+
+														});
+
+
+                                                                                })
+							$('#btnfadeto').click(function(){
+                                                                                        
+                                                                                        $('#mypix').();
+
+
+                                                                                })
+
+
+						/*	counter = 1;
+							$('#but').click(function(){
+		$('#address').append('<p>Address line ' + counter +'</p>'+'<input '+ 'type="text" ' +'name='+"address"+ counter + '>')
+		counter++;
+										
+										})
+							$('#remove').click(function(){
+									$('#address').remove();	
+
+
+										})*/
+
+			//			    })*/
+
+		</script>
+        </body>
+</html>
+                                                                                                   

@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+         <title>jquery_first exercise</title>
+    </head>
+    <body>
+	    <img src="k.jpg" id="k" width="300" height="30">
+
+	 <form method="post" action="reg.php">
+	    <h1>Honest</h1>
+	    <p id="message">we welcome all students back from the <span>assuu</span> strike which lasted for 6 months.</p>
+	    <p id="bu">prudent</p>
+	    <br>
+		
+	    <label>username</label>
+	    <input type="password" id="g">
+
+	    <label>password</label>
+	    <input name="jio" id="v"><br>
+	    <input type="checkbox" name="mail" id="jj" >mail <br>
+	    <input type="checkbox" name="fax" id="agree">terms and conditions<br>
+		
+	    <button type="button" id="reg" >Register</button>
+	 </form>
+    
+    <script src="jquery/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript">	//	.text() processes which is good for picking only text. 
+	    							//	.html is raw data. it is good for images.
+		
+		      $(document).ready(function(){
+
+                                                  $('#reg').click(function(){
+								    // p =   $('#ll').prop('checked')
+								     // alert(p);
+								      x =  $('#jj').attr('checked')
+								      if(x == false)
+								     	 {alert('pls click t and Cs')}
+								      else
+								      	{alert('congrats')}
+								      
+
+								     // $('img').removeAttr('width')
+								    // v = $('#g').attr('type');
+								    //if $(v =='password')
+					  			//		{$('#g').attr('type','text')}
+					  			  //  else
+								    //  {$('#g').attr('type','password')}
+								     
+										
+								    //  v =  $('#k').attr('width');
+								     // l = $('#k').attr('height');
+								     // alert('the image dimension is ' + l +  ' by ' + v)
+
+								   //	$('#reg').html('successfully registered');
+							     		//	alert(x)
+							    		  
+									//	 $('p').text('hello'); //writes into all p tags.
+								     	// $('p:first').html('<img src="k.jpg" width="60vw" height="60vh" >');
+								     		//$().
+									//	alert(x);
+										
+								     //		var y = $('#v').val();
+								     		
+								//		if(x == "" || y == "")
+								//	     		 $('p:first').text('pls fill all blanks')
+								  //   		else
+								//		  	 $('p:first').text('welcome');
+										
+										
+							     		   }) 
+							
+
+						
+                                        
+
+
+                                                 })
+
+
+
+
+    </script>
+    </body>
+ </html>
+	

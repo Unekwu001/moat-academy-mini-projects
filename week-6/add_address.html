@@ -1,0 +1,50 @@
+<html>
+        <head>
+                <title>AddClass with jquery
+                </title>
+                <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+                <style type="text/css">
+                        .squarebox{width:50vw;height:50vh}
+                        .tn{color:white;background-color:blue}
+                        .addborder{border:2px solid black}
+                        .padelement{padding:20px}
+                        #article{border:1px solid black}
+                </style>
+        </head>
+        <body>
+                <div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<h1>User's Registration</h1>
+
+					<button type="button" name="add" id="but">Add more fields</button>
+				</div>
+				<div id="address">
+				</div>
+				<div>
+				<button id="remove" class="btn btn-primary mt-4" >Remove fields</button>
+				</div>
+			</div>
+                </div>
+                <script src="jquery/jquery.min.js"></script>
+
+                <script type="text/javascript" language="javascript">
+			$(document).ready(function(){
+							counter = 1;
+							$('#but').click(function(){
+		$('#address').append('<p>Address line ' + counter +'</p>'+'<input '+ 'type="text" ' +'name='+"address"+ counter + '>')
+		counter++;
+										
+										})
+							$('#remove').click(function(){
+									$('#address').remove();	
+
+
+										})
+
+						    })
+
+		</script>
+        </body>
+</html>
+                                                                                                   

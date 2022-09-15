@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>assignment 1 jquery
+		</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<style type="text/css">
+		#align{text-align:center}
+		@font-face{font-family:'Amita';src:url('fonts/Amita-Regular.woff') }
+		*{font-family:'Amita','cursive'}
+		#maindiv{background-color:rgb(220,220,220);margin:20vh 15vw 50vw 20vh}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row mt-5">
+				<div class="col mt-5" id="maindiv">
+					<form id="align" class="mt-5">
+
+						<p id="ptag" style="color:red;border:1px blur red"></p>
+						<label>Email</label>
+						<input type="email" id="main" class="form-control-sm mb-5" required ><br>
+						<input type="checkbox" class="others mb-5" id="terms"> <span> 
+							<b>I agree to the terms and conditions</b></span><br>
+						<a href="#" target="_self" id="link"><b> Send me a confirmation link</b></a>
+
+					</form>
+
+
+				</div>
+			</div>
+		</div>
+		<script src="jquery/jquery.min.js"></script>
+		<script type="text/javascript" language="javascript">
+			$(document).ready(function(){
+							$('#link').click(function(){
+									y = $('#terms').prop('checked');
+									x = $('input[type="email"]').val();
+									if(y == false)
+									{
+										alert('Please, you would need to agree to the terms and conditions')
+										$('#ptag').text('Please check the terms and conditions to continue')
+									}
+									else if(x == "" || x == null)
+									{
+										alert('Weldone. You can now enter your email to get the link')
+										$('#ptag').text('Please enter your email to continue')
+								  	}
+									else if(x.length < 10)
+									{
+										alert('Not a valid email address')
+										$('#ptag').text('Not a valid email address !')
+									}
+									else
+									{
+										alert('congratulations! please check your email')
+										$('#ptag').html('<p style="color:green">Congratulations !. please check your email.</p>')
+									}
+											
+										    })
+									
+		         			   })
+		</script>
+	</body>
+</html>

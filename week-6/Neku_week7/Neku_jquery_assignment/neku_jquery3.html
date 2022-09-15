@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>assignment3 jquery
+		</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<style type="text/css">
+		#align{text-align:center}
+		@font-face{font-family:'Amita';src:url('fonts/Amita-Regular.woff') }
+		*{font-family:'Amita','cursive'}
+		span{font-size:160%}
+		input{height:4vh;width:2vw; color:rgb(150,250,200)}
+		#k{background-color:rgb(190,190,190);margin-left:17vw;margin-right:17vw;border-radius:15% }
+		h3{color:rgb(150,250,200);background-color:black}
+		.others{color:rgb(150,250,200)}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row mt-5">
+				<div class="col mt-5" id="k">
+					<form id="align" class="mt-5">
+
+						<h3>How did you hear about us ?</h3><br>
+						<!----select all input---->
+						<input type="checkbox" class="others mb-5" id="main"><span> Select all</span><br>
+
+						<!------others---------->
+						<div>
+						<input type="checkbox" class="others mb-2" style="margin-left:0.3vw;margin-right:1vw">
+						<span>Facebook</span>
+						</div>
+						<div>
+						<input type="checkbox" class="others mb-2" style="margin-left:1.4vw;margin-right:1vw">
+						<span>Google ads</span>
+						</div>
+						<div>
+						<input type="checkbox" class="others mb-2" style="margin-left:1.4vw;margin-right:1vw">
+						<span>Newspaper</span>
+						</div>
+						<div>
+						 <input type="checkbox" class="others mb-2" style="margin-left:6.8vw;margin-right:1vw">
+						 <span>Linda Ikeji's Blog</span>
+						</div>
+						<div>
+						 <input type="checkbox" class="others mb-2" style="margin-left:5vw;margin-right:1vw">
+						 <span>Moat academy</span>
+						</div>
+						<div>
+						 <input type="checkbox" class="others mb-2" style="margin-left:3.5vw;margin-right:1vw">
+						 <span>Punch online</span>
+						</div>
+						<div>
+						 <input type="checkbox" class="others mb-2" style="margin-left:-2.5vw;margin-right:1vw">
+						 <span>Others</span>
+						</div>
+					</form>
+
+
+				</div>
+			</div>
+		</div>
+		<script src="jquery/jquery.min.js"></script>
+		<script type="text/javascript" language="javascript">
+			$(document).ready(function(){
+							$('#main').click(function(){
+						
+										
+										if($(this).prop('checked') == true)
+											{$('.others').prop('checked',true);}
+										else
+											{$('.others').prop('checked',false);}
+										     
+										  })
+		         			   })
+		</script>
+	</body>
+</html>

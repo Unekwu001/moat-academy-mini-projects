@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>test jquery
+		</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<style type="text/css">
+		#align{text-align:center}
+		@font-face{font-family:'Amita';src:url('fonts/Amita-Regular.woff') }
+		*{font-family:'Amita','cursive'}
+		span{font-size:110%}
+		#bortin{background-color:orange}
+		#terms{height:5vh;width:2vw}
+		#k{background-color:rgb(150,250,200);margin-left:17vw;margin-right:17vw;border-radius:15% }
+		h3{color:rgb(150,250,200);background-color:black}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row mt-5">
+				<div class="col mt-5" id="k">
+					<form id="align" class="mt-5">
+
+						<h3>AWS customer Agreement</h3><br>
+						<input type="checkbox" class="others mb-5" id="terms"> <span> 
+							Check here to indicate that you have read and agreed to the terms of the AWS customer Agreement</span><br>
+						<button type="submit" id="bortin" class="form-control-lg" disabled="disabled">Create account and continue</button>
+
+					</form>
+
+
+				</div>
+			</div>
+		</div>
+		<script src="jquery/jquery.min.js"></script>
+		<script type="text/javascript" language="javascript">
+			$(document).ready(function(){
+							$('input[type="checkbox"]').click(function(){
+						
+										
+										if($(this).prop('checked') == false)
+											{$('button').prop('disabled',true);}
+										else
+											{$('button').prop('disabled',false);}
+										     
+										  })
+		         			   })
+		</script>
+	</body>
+</html>

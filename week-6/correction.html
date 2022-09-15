@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>assignment3 jquery
+		</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row mt-5">
+				<div class="col mt-5" id="k">
+
+						<!------others---------->
+						<div>
+						<input type="checkbox" class="others mb-2" style="margin-left:0.3vw;margin-right:1vw">
+						<span>Facebook</span>
+						</div>
+
+				</div>
+			</div>
+		</div>
+		<script src="jquery/jquery.min.js"></script>
+		<script type="text/javascript" language="javascript">
+			$(document).ready(function(){
+							$('#main').click(function(){
+						//$('.others').prop('checked',$(this).prop('checked'));
+										
+										if($(this).prop('checked') == true)
+											{$('.others').prop('checked',true);}
+										else
+											{$('.others').prop('checked',false);}
+										     
+										  })
+		         			   })
+		</script>
+	</body>
+</html>

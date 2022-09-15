@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JquerySyntax</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<style>
+			form{text-align:center}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<form action="reg.php" method="post">
+						<h1 id="h_one">Welcome to my form</h1>
+						<p id="p_tag_one">The problem we are having in nigeria is the issue of leadership</p>
+						<input type="text" id="ipone" name="name">
+						<button id="button_one" name="b1" type="button" class="form-control-sm btn btn-primary">
+							no Likes yet</button >
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--linking jquery. This file must always be above the javascript so that the javascript can read from it-->
+		<script src="jquery/jquery.min.js"></script>
+
+		<script language="javascript" type="text/javascript" >
+			//$(selector).action()
+			$(document).ready(function(){
+							
+						$('#button_one').click(function(){
+										
+										for(x = 0; x < 20; x++)
+										{
+											if(x == 1)	
+												return $('button_one').html( 'like')
+											else
+												return $('#button_one').html(' likes')
+
+										}
+									
+
+									})
+
+
+							
+						})
+		</script>
+	</body>
+</html>

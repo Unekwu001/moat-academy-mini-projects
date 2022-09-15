@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title>AddClass with jquery
+		</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<style type="text/css">
+			.squarebox{width:50vw;height:50vh}
+			.tn{color:white;background-color:blue}
+			.addborder{border:2px solid black}
+			.padelement{padding:20px}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row mt-5">
+				<div class="col mt-5" id="k">
+
+						<!------others---------->
+						<div class="col-md-6">
+							<input class="form-control" id="kk">
+							<img src="images/nja.png" alt="an image" class="img-fluid" id="mypix">
+							<button type="button" id="btn1">Add class</button>
+							 <button type="button" id="btn2">remove class</button>
+							 <button type="button" id="btn3">has class</button>
+							 <button type="button" id="btn4">toggle class</button>
+							 <button type="button" id="btn5">like</button>
+
+						</div>
+						<div class="col-md-6">
+							<h1 id="hone">My friend</h1>
+							<p id="ptag">what do you want to do with your life my friend</p>
+						</div>
+
+				</div>
+			</div>
+		</div>
+		<script src="jquery/jquery.min.js"></script>
+		<script src="visualjquery/"></script>
+		<script type="text/javascript" language="javascript">
+			$(document).ready(function(){
+							$('#btn1').click(function(){
+							
+										$('#mypix').addClass('squarebox rounded-circle');
+										//$(this).addClass('btn btn-primary')
+										//$('#hone').addClass('text-success')
+										//$('#ptag').addClass('bg-warning')
+										$('#hone,#ptag').addClass('addborder')
+										
+										})
+							$('#btn2').click(function(){
+										$('#mypix').removeClass('squarebox rounded-circle')
+
+
+
+
+										})
+							$('#btn3').click(function(){
+										isboder = $('#hone').hasClass('addborder')
+											if(isboder == true)
+												{
+												$('#hone').addClass('padelement')
+												}
+											else
+												{
+												$('#hone').addClass('bg-primary')
+												}
+										})
+							$('#btn4').click(function(){
+										$('body').toggleClass('bg-success')	
+
+
+										})
+							$('#btn5').click(function(){
+										if($(this).text('like'))
+											{	
+											$(this).text('liked')
+											$(this).toggleClass('btn-primary')
+											}
+
+										})
+							$('#mypix').mouseover(function(){
+										//retrieve property value
+										//pi = $(this).css('border-radius');
+										//	alert(pi);
+										//change property value
+										//$(this).css('border','5px solid yellow')
+										$(this).css({
+											"box-shadow":"2px 3px 5px",
+											"border":"10px dotted green",
+											"border-radius":"20%"
+											    });
+							$('#kk').mouseover(function(){
+
+
+
+
+										})
+
+						/*	$('#main').click(function(){
+						//$('.others').prop('checked',$(this).prop('checked'));
+										
+									if($(this).prop('checked') == true)
+											{$('.others').prop('checked',true);}
+										else
+											{$('.others').prop('checked',false);}
+										     
+										  })*/
+							
+							
+
+		         			   })
+		</script>
+	</body>
+</html>

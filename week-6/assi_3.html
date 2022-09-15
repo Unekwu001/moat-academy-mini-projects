@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>test jquery
+		</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<style type="text/css">
+		#align{text-align:center}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<form id="align">
+						<input type="checkbox" id="main" ><span> select all</span><br>
+						<input type="checkbox" class="others"><span> main</span><br>
+						<input type="checkbox" class="others" ><span> google ads</span><br>
+						<input type="checkbox" class="others" ><span>moat academy </span><br>
+						<input type="checkbox" class="others"><span> instagram</span><br>
+						<input type="checkbox" class="others" ><span> twitter</span><br>
+						<input type="checkbox" class="others" ><span> linda ikeji</span><br>
+						<input type="checkbox" class="others" ><span> google ads</span><br>
+						<input type="checkbox" class="others" ><span> facebook</span><br>
+						<input type="checkbox" class="others" ><span> punch online</span><br>
+						<input type="checkbox" id="other" ><span> others</span><br>
+
+					</form>
+
+
+				</div>
+			</div>
+		</div>
+		<script src="jquery/jquery.min.js"></script>
+		<script type="text/javascript" language="javascript">
+			$(document).ready(function(){
+							y= $('#main').prop('checked');
+							x = $('#other').prop('checked');
+							if(y == true)
+							{x == true}
+											
+										
+						})
+
+		</script>
+	</body>
+</html>
