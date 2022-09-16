@@ -6,6 +6,7 @@ Contains basic html tags and syntax usage.
 <!-------week-2---------->
 Contains basic html tags and inline,internal and external CSS files
 
-
+<-------week-6------------>
+jquery usuage
 
 
