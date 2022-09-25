@@ -1,0 +1,26 @@
+QUESTION 1.
+
+Create 3 modules as follows:
+	 admin_modules.py, 
+	 student_modules.py,
+	 home.py 
+
+
+Within admin_modules.py and student_modules.py respectively, create a dictionary of students and their scores as follows:
+result = {"Ayo":34,"Kunle":35,"Daniel":30,"Ema":29,"Mike":19,"Ada":37}
+
+also create within admin_modules.py, a function check_result() that displays all the students in the dictionary and their corresponding scores
+
+likewise, within student_modules.py, create a function check_result that receives a student's name as a parameter and displays the score of the student.
+
+Within home.py, using input function, let the user tell you their usertype (admin or student) if the usertype is admin,call function check_result that is located in admin_modules.py otherwise if the usertype is student, ask for their name and display the corresponding score for the supplied name by calling the function check_result() located within student_modules.py.
+
+QUESTION 2.
+At the last APC primaries, if the votes across the 6 geo political regions were recorded as follows:
+{
+"Bola Tinubu":[0, 200, 120, 0, 450, 670 ],
+"Yemi Osinbajo":[0,0, 0,56, 10,0],
+"Rochas Okorocha":[0,0,0,0,0,0],
+"Rotimi Amaechi":[20,13,2,1,29,0]
+}
+Write a program that goes through the dictionary/array and displays the name of the aspirant with the highest votes. Sample output would be: Bola Tinubu won the election with 1,440 votes

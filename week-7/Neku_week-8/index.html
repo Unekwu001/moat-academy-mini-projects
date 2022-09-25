@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AGER - Home</title>
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="css/project8.css" rel="stylesheet">
+		<link rel="stylesheet" href="bootstrap/animate.min.css">
+		<style>
+			.firstrow{background-color:rgb(0,0,0);height:11vh }
+			#learnmore{background-color:rgb(0,200,0);height:8vh}
+			#menuro{background-color:rgb(190,190,190)}
+			#menucol1 li{display:inline-block;justify-content:center; margin:1vw;font-family:"Ubuntu"}
+			#menucol2 li{display:inline-block;justify-content:center; margin:1vw;font-family:"Ubuntu"}
+			#menucol1 li:hover{background-color:grey;color:white;border-radius:10%;padding:1vh}
+			#menucol2 li:hover{background-color:grey;color:white;border-radius:10%;padding:1vh}
+			#stickyrow{position:sticky;top:10px}
+			#banner{background-image:url("images/FO.jpg");background-size:cover;background-repeat:no-repeat;height:200vh;
+			background-position:;right;position:relative;}
+	                @font-face{font-family:"Amita";src:url('fonts/Amita-Regular.woff')}
+                        @font-face{font-family:"Ubuntu";src:url('fonts/Ubuntu-Regular.ttf')}
+ 			#writeOnbanner{color:white;margin-left:10vw;margin-top:30vh}
+			form{background-color:black;margin-right:5%;margin-left:5%;padding:5%}
+			a{text-decoration:none;color:black}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid" >
+			<div class="row">
+				<div class="col-8 firstrow">
+					<marquee></marquee>
+				</div>
+				<div class="col-4 firstrow">
+					<button class="btn btn-success form-control-md mt-2 animate__animated animate__tada" id="learnmore">Learn more >>></button>
+				</div>
+			</div>
+			<div class="row mt-3" id="stickyrow">
+				<div class="col-5 menu">
+					<ul id="menucol1">
+						<li><a href="index.html">Why Ager ?</a></li>
+						<li><a href="index.html">Home</a><li>
+						<li><a href="#">Assign farmer to Trust group</a></li>
+
+                                        </ul>
+				</div>
+				<div class="col-1" id="menulogo">
+					<img src="images/ager.png" alt="ager logo" class="img-fluid animate__animated animate__bounce animate__repeat-3" width="250vw" height="250vh">
+				</div>
+				<div class="col-6 menu">
+				<!--menu bar-->
+					<ul id="menucol2">
+						<li><a href="fo_reg.html">Register as a field officer</a></li>
+						<li><a href="onboard_famer.html">Onboard a farmer</a></li>
+						<li><a href="#">Verify a farmer</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col"id="banner">
+					<div class="col-9" id="writeOnbanner">
+						<h1>Building Nigeria's Largest farmer Database</h1>
+						<p>According to the Food and  Agricultural Organisation of the United Nations, Nigeria has 
+						70.8 million hectares of agriculture land area with maize, cassava, guinea 
+						corn, yam beans, millet and rice being the major crops. Nigeria’s rice production rose from 
+						3.7 million metric tons in 2017 to 4.0 million metric tons in 2018. Inspite of this, only 
+						57 percent of the 6.7 million metric tons of rice consumed in Nigeria annually is locally 
+						produced leading to a deficit of about 3 million metric tons, which is either imported or 
+						smuggled into the country illegally.This problem has been partly attributed to a lack of 
+						adequate agricultural inputs in the right quality and quantity. A lack of farmer visibility 
+						has also contributed negatively to this backdrop.</p>
+					</div>
+
+					<div class="col-12">
+				</div><!--banner ends-->
+			</div>
+
+		</div>
+	<script src="jquery/jquery.min.js"></script>
+	<script type="text/javascript" language="javascript" src="js/project8.js" ></script>
+	</body>
+</html>
