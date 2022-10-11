@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AGER-register as fo</title>
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="css/project8.css" rel="stylesheet">
+		<link rel="stylesheet" href="bootstrap/animate.min.css">
+		<style>
+			.firstrow{background-color:rgb(0,0,0);height:11vh }
+			#learnmore{background-color:rgb(0,200,0);height:8vh}
+			#menuro{background-color:rgb(190,190,190)}
+			#menucol1 li{display:inline-block;justify-content:center; margin:1vw;font-family:"Ubuntu"}
+			#menucol2 li{display:inline-block;justify-content:center; margin:1vw;font-family:"Ubuntu"}
+			#menucol1 li:hover{background-color:grey;color:white;border-radius:10%;}
+			#menucol2 li:hover{background-color:grey;color:white;border-radius:10%;}
+			#stickyrow{position:sticky;top:10px}
+	                @font-face{font-family:"Amita";src:url('fonts/Amita-Regular.woff')}
+                        @font-face{font-family:"Ubuntu";src:url('fonts/Ubuntu-Regular.ttf')}
+ 			#writeOnbanner{color:white;margin-left:10vw;margin-top:30vh}
+			form{background-color:black;margin-right:5%;margin-left:5%;padding:5%;color:white;text-align:center}
+			a{text-decoration:none;color:black}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid" >
+			<div class="row">
+				<div class="col-8 firstrow">
+					<marquee></marquee>
+				</div>
+				<div class="col-4 firstrow">
+					<button class="btn btn-success form-control-md mt-2 animate__animated animate__tada" id="learnmore">Learn more >>></button>
+				</div>
+			</div>
+			<div class="row mt-3" id="stickyrow">
+				<div class="col-5 menu">
+					<ul id="menucol1">
+						<li><a href="#" target="">Why Ager ?</a></li>
+						<li><a href="index.html" target="_self">Home</a><li>
+						<li><a href="#" target="">Assign farmer to Trust group</a></li>
+
+                                        </ul>
+				</div>
+				<div class="col-1" id="menulogo">
+					<img src="images/ager.png" alt="ager logo" class="img-fluid animate__animated animate__bounce animate__repeat-3" width="250vw" height="250vh">
+				</div>
+				<div class="col-6 menu">
+				<!--menu bar-->
+					<ul id="menucol2">
+						<li><a href="fo_reg.html" target="_blank">Register as a field officer</a></li>
+						<li><a href="onboard_famer.html" target="_blank">Onboard a farmer</a></li>
+						<li><a href="#" target="">Verify a farmer</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+					<div class="col-12" >
+						<div>
+						<input type="radio" id="registerbtn" name="regandlog"> Sign up
+						<input type="radio" id="loginbtn" name="regandlog"> Already have an account
+						</div>
+					<div id="registerform">	
+                  				<form method="POST" action="fo_reg.py" >
+						
+                                                	<div class="col mt-12">
+                                                	        <h2 id="celebrate">Register as a field Officer</h2>
+                                                	        <hr style="height:3vh">
+                                                	        <h4>Please note: You should be 18 years and above to Register. Thankyou!</h4>
+                                                	</div>
+                                        
+                                        		<div class= "row mt-5">
+                                                	<div class="col">
+                                                        	<label>First Name</label>
+                                                        	<input type="text" name="full_name" class="form-control">
+                                                	</div>
+							<div class="col-2">
+                                                                <label>Surname</label>
+                                                                <input type="text" name="full_name" class="form-control">
+                                                        </div>
+							<div class="col-2">
+                                                                <label>Other Names</label>
+                                                                <input type="text" name="full_name" class="form-control">
+                                                        </div>
+
+
+                                                	 <div class="col-2">
+                                                        	<label>Phone number</label>
+                                                        	<input type="text" name="phone_number" class="form-control">
+                                                	</div>
+                                                	 <div class="col-2">
+                                                        	<label>Email</label>
+                                                        	<input type="email" name="email" class="form-control">
+                                                	</div>
+							<div class="col-2">
+                                                        	<label>Gender </label>
+                                                        	<select name="gender" class="form-control">
+                                                                	<option value=""> Select your gender</option>
+                                                                	<option value="Male">Male</option>
+                                                                	<option value="Female">Female</option>
+                                                        	</select>
+                                                	</div>
+							</div>
+							<div class="row mt-4">
+                                                	 <div class="col-2">
+                                                        	
+                                                        	<select type="text" class="form-control">
+                                                                	<option value="">Select your state</option>
+                                                                	<option value="1">Abia</option>
+                                                                	<option value="2">Adamawa</option>
+                                                                	<option value="3">Akwa Ibom</option>
+                                                                	<option value="4">Anambra</option>
+                                                                	<option value="5">Bauchi</option>
+                                                                	<option value="6">Bayelsa</option>
+                                                                	<option value="7">Benue</option>
+                                                                	<option value="8">Borno</option>
+                                                                	<option value="9">Cross River</option>
+                                                                	<option value="10">Delta</option>
+                                                                	<option value="11">Ebonyi</option>
+                                                                	<option value="12">Edo</option>
+                                                                	<option value="13">Ekiti</option>
+                                                                	<option value="14">Enugu</option>
+                                                                	<option value="15">Gombe</option>
+                                                                	<option value="16">Imo</option>
+                                                                	<option value="17">Jigawa</option>
+                                                                	<option value="18">Kaduna</option>
+									<option value="19">Kano</option>
+                                                                	<option value="20">Katsina</option>
+                                                                	<option value="21">Kebbi</option>
+                                                                	<option value="22">Kogi</option>
+                                                                	<option value="23">Kwara</option>
+                                                                	<option value="24">Lagos</option>
+                                                                	<option value="25">Nassarawa</option>
+                                                                	<option value="26">Niger</option>
+                                                                	<option value="27">Ogun</option>
+                                                                	<option value="28">Ondo</option>
+                                                                	<option value="29">Osun</option>
+                                                                	<option value="30">Oyo</option>
+                                                                	<option value="31">Plateau</option>
+                                                                	<option value="32">Rivers</option>
+                                                                	<option value="33">Sokoto</option>
+                                                                	<option value="34">Taraba</option>
+                                                                	<option value="35">Yobe</option>
+                                                                	<option value="36">Zamfara</option>
+                                                                	<option value="37">FCT</option>
+                                                                	<option value="38">Foreign</option>
+                                                        	</select>
+                                                 	</div>
+							<div class="col-2">
+								<select name="lga_id" class="form-control">
+									<option value="">Select your LGA</option>
+									<option value="1"></option>
+									<option value="2"></option>
+								</select>
+							</div>
+							<div class="col-2">
+                                                                <select name="village_id" class="form-control">
+                                                                        <option value="">Select your village</option>
+                                                                        <option value="1"></option>
+                                                                        <option value="2"></option>
+                                                                </select>
+                                                        </div>
+
+                                                	<div class="col-2">
+                                                        	<input type="password" name="password" class="form-control" placeholder=
+									     "Enter your password ">
+							</div>
+							<div class="col-2">
+                                                        	<input type="password" name="password" class="form-control" 
+								placeholder="Confirm password">
+                                                	</div>
+							<div class="col-2">
+                                                                <select name="educational_qualification" class="form-control">
+                                                                        <option value="">Highest Educational Qualification</option>
+                                                                        <option value="1">MSc/MBA/MPhil or equivalent</option>
+                                                                        <option value="2">BSc/HND/B.A or equivalent</option>
+									<option value="2">NCE/OND or equivalent</option>
+									<option value="2">SSCE or equivalent</option>
+									<option value="2">Primary School leaving certificate</option>
+                                                                </select>
+                                                        </div>
+
+
+							</div><!--row2-->
+							<div class="row mt-4">
+								<div class="col-2 offset-2">
+									<input name="home_address" type="text" 
+									     placeholder="Home address" class="form-control" >
+								</div>
+								 <div class="col-2">
+                                                                        <input name="guarantor_name" type="text" 
+									      placeholder="Guarantor's full name" class="form-control" >
+                                                                </div>
+								 <div class="col-2">
+                                                                        <input name="phone_number" type="text" 
+								              placeholder="guarantor's phone number" class="form-control" >
+                                                                </div>
+								 <div class="col-2">
+                                                                        <input name="guarantor_address" type="text" 
+									     placeholder="guarantor's address" class="form-control" >
+                                                                </div>
+
+							</div>
+                                                	<div class="col mt-5">
+                                                        	<input type="reset" name="reset">
+                                                        	<input type="submit" name="submit" style="margin-left:2vw">
+                                                	</div>
+						
+                                       
+						</form>
+					</div>
+					<div id="loginform">
+						<form method="POST" action="fo_reg.py">
+							<div class="col mt-12">
+                                                                <h2 id="celebrate">Login</h2>
+                                                                <hr style="height:3vh">
+                                                                <h4>Welcome Back !</h4>
+                                                        </div>
+
+							<input type="text" name="officer_id" class="form-control" placeholder="Enter field officer ID">
+							<select name="role" class="form-control mt-2">
+								<option value="">Select your role</option>
+								<option value="2">Field officer</option>
+								<option value="3">Input distribution officer</option>
+								<option value="4">Collection officer</option>							                                          
+							</select>
+							<input type="password" name="password" class="form-control-sm mt-2" placeholder=
+									      "Enter your password " id="pwdinput">
+							<button id="showpwd" type="button" class="form-control-sm"
+								onclick="
+								x = document.getElementById('pwdinput')
+								if(x.type == 'password')
+								{
+									x.type = 'text'
+									this.innerHTML = 'hide password'
+								}
+								else
+								{
+									x.type = 'password'
+									this.innerHTML = 'show password'
+								}
+								">show password</button>
+							<div class="col mt-5">
+                                                                <input type="reset" name="reset">
+                                                                <input type="submit" name="submit" style="margin-left:2vw">
+                                                        </div>
+
+						</form>
+
+					</div>
+					</div>
+				</div><!--banner ends-->
+			</div>
+
+		</div>
+	<script src="jquery/jquery.min.js"></script>
+	<script type="text/javascript" language="javascript" >
+		$(document).ready(function(){
+						$('#registerbtn').prop('checked',true)
+						$('#loginform').hide()
+						
+						$('#loginbtn').click(function(){
+										$('#registerform').hide()
+										$('#loginform').show()
+										})
+						$('#registerbtn').click(function(){
+                                                                                $('#registerform').show()
+                                                                                $('#loginform').hide()
+                                                                                })
+						
+
+					  })
+
+	</script>
+	</body>
+</html>

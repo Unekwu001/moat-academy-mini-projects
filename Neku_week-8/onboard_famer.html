@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>AGER-onboard a farmer</title>
+                <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+                <link href="css/project8.css" rel="stylesheet">
+                <link rel="stylesheet" href="bootstrap/animate.min.css">
+                <style>
+                        .firstrow{background-color:rgb(0,0,0);height:11vh }
+                        #learnmore{background-color:rgb(0,200,0);height:8vh}
+                        #menuro{background-color:rgb(190,190,190)}
+                        #menucol1 li{display:inline-block;justify-content:center; margin:1vw;font-family:"Ubuntu"}
+                        #menucol2 li{display:inline-block;justify-content:center; margin:1vw;font-family:"Ubuntu"}
+                        #menucol1 li:hover{background-color:grey;color:white;border-radius:10%;}
+                        #menucol2 li:hover{background-color:grey;color:white;border-radius:10%;}
+                        #stickyrow{position:sticky;top:10px}
+                        @font-face{font-family:"Amita";src:url('fonts/Amita-Regular.woff')}
+                        @font-face{font-family:"Ubuntu";src:url('fonts/Ubuntu-Regular.ttf')}
+                        #writeOnbanner{color:white;margin-left:10vw;margin-top:30vh}
+                        form{background-color:black;margin-right:5%;margin-left:5%;padding:5%;color:white;text-align:center}
+                        a{text-decoration:none;color:black}
+                </style>
+        </head>
+        <body>
+                <div class="container-fluid" >
+                        <div class="row">
+                                <div class="col-8 firstrow">
+                                        <marquee></marquee>
+                                </div>
+                                <div class="col-4 firstrow">
+                                        
+			<button class="btn btn-success form-control-md mt-2 animate__animated animate__tada" id="learnmore"
+				>Learn more >>></button>
+                                </div>
+                        </div>
+                        <div class="row mt-3" id="stickyrow">
+                                <div class="col-5 menu">
+                                        <ul id="menucol1">
+                                                <li><a href="#" target="">Why Ager ?</a></li>
+						<li><a href="index.html" target="_self">Home</a><li>
+                                                <li><a href="#" target="">Assign farmer to Trust group</a></li>
+
+                                        </ul>
+                                </div>
+                                <div class="col-1" id="menulogo">
+                                        <img src="images/ager.png" alt="ager logo" class="img-fluid animate__animated animate__bounce animate__repeat-3" width="250vw" height="250vh">
+                                </div>
+                                <div class="col-6 menu">
+                                <!--menu bar-->
+                                        <ul id="menucol2">
+                                                <li><a href="fo_reg.html" target="_blank">Register as a field officer</a></li>
+                                                <li><a href="onboard_famer.html" target="_blank">Onboard a farmer</a></li>
+                                                <li><a href="#" target="">Verify a farmer</a></li>
+
+                                        </ul>
+                                </div>
+                        </div>
+                </div>
+		<div id="loginform">
+                                                <form method="POST" action="onboardfarmer.py">
+                                                        <div class="col mt-12">
+                                                                <h2 id="celebrate">Farmer onbording</h2>
+                                                                <hr style="height:3vh">
+                                                                <h4>Login to proceed </h4>
+                                                        </div>
+
+                                                        <input type="number" name="officer_id" class="form-control" placeholder="Enter your field officer id">
+                                                        <select name="role" class="form-control mt-2">
+                                                                <option value="2">Field officer</option>                               
+                                                        </select>
+                                                        <input type="password"id="pwdinput" name="password" class="form-control mt-2" placeholder=
+                                                                             "Enter your password ">
+							<button id="showpwd" type="button" class="form-control-sm"
+                                                                onclick="
+                                                                x = document.getElementById('pwdinput')
+                                                                if(x.type == 'password')
+                                                                {
+                                                                        x.type = 'text'
+                                                                        this.innerHTML = 'hide password'
+                                                                }
+                                                                else
+                                                                {
+                                                                        x.type = 'password'
+                                                                        this.innerHTML = 'show password'
+                                                                }
+                                                                ">show password</button>
+
+
+                                                        <div class="col mt-5">
+                                                                <input type="reset" name="reset">
+                                                                <input type="submit" name="submit" style="margin-left:2vw">
+                                                        </div>
+
+                                                </form>
+
+                                     </div>
+				     </div>
+                                </div><!--banner ends-->
+                        </div>
+
+                </div>
+        <script src="jquery/jquery.min.js"></script>
+        <script type="text/javascript" language="javascript" >
+        </script>
+        </body>
+</html>
+                                                                                                                            262,7         Bot
+

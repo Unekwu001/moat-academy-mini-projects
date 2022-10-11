@@ -1,0 +1,6 @@
+At the last APWithin home.py, using input function, let the user tell you their usertype (admin or student) 
+if the usertype is admin,call function check_result that is located in admin_modules.py otherwise if the usertype
+gold is student, ask for their name and display the corresponding score for the supplied name by calling the function 
+check_result() located within student_modules.py.
+QUESTION 2.C primaries, if the votes across the 6 geo political regions were recorded as follows:
+

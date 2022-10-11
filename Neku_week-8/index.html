@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AGER - Home</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="bootstrap/animate.min.css">
+		<style type=text/css>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+			#learnmore{background-color:rgb(0,200,0);height:8vh}
+			#menuro{background-color:rgb(190,190,190)}
+			#menucol1 li{display:inline-block;justify-content:center; margin:1vw;font-family:"Ubuntu";background-color:green;border-radius:20px;padding:2%}
+			#menucol2 li{display:inline-block;justify-content:center; margin:1vw;font-family:"Ubuntu";background-color:orange;border-radius:20px;padding:2%}
+			#stickyrow{position:sticky;top:0px;background-color:black}
+			#banner{background-image:url("images/FO.jpg");background-size:cover;background-repeat:no-repeat;height:100vh;
+			background-position:fixed;}
+			#banner2{background-image:url("images/cru.jpg");background-size:cover;background-repeat:no-repeat;height:100vh;
+                        background-position:fixed;right}
+			#overlay{background-color:rgba(0,0,0,0.7);height:100vh;padding:5%;width:100%;margin:0%;}
+	                @font-face{font-family:"Amita";src:url('fonts/Amita-Regular.woff')}
+                        @font-face{font-family:"Ubuntu";src:url('fonts/Ubuntu-Regular.ttf')}
+ 			#writeOnbanner{color:white;margin-left:3vw;margin-top:6vh;text-align:center}
+			form{background-color:black;margin-right:5%;margin-left:5%;padding:5%}
+			a{text-decoration:none;color:white}
+			.firstrow{background-color:black}
+			form{background-color:black;border-radius:20px;text-align:center;margin-top:17%;margin-left:35%}
+			#whyager{background-image:url("images/4.jpg");background-size:cover;background-repeat}
+			#inner_whyager{background-color:rgb(200,200,200);color:black;padding:3%;text-align:center;margin-top:-4%;
+			border-radius:20px}
+			.r1{height:10vh;background-color:green;margin-left:48vw;margin-right:48vw}
+			#registerform{margin-left:vw;margin-top:-16vh}	
+			#loginform{margin-top:-16vh;}
+			#signin{margin-top:10vh;margin-left:20vw;border-radius:10px;background-color:rgb(80,80,80);color:white}
+			#registerform select,#registerform input{margin-bottom:2vh}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid" >
+			<div class="row">
+				<div class="col-md-8 firstrow">
+				
+				</div>
+				<div class="col-md-4 firstrow">
+					<button class="btn btn-success form-control-md  animate__animated animate__tada" id="learnmore">Learn more >>> </button>
+				</div>
+			</div>
+			<div class="row" id="stickyrow">
+				<div class="col-md-5 menu">
+					<ul id="menucol1">
+						<li><a href="#whyager">Why Ager ?</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#modelpic">Model</a></li>
+						<li><a href="#">Contact us</a></li>
+
+                                        </ul>
+				</div>
+				<div class="col-md-1" id="menulogo">
+					<img src="images/ager.png" alt="ager logo" class="img-fluid animate__animated animate__bounce animate__repeat-3" width="250vw" height="250vh">
+				</div>
+				<div class="col-md-6 menu">
+				<!--menu bar-->
+					<ul id="menucol2">
+						<li><a id="register"style="color:black"href="#signin"> Register as a field officer</a></li>
+						<li><a style="color:black" href="onboard_famer.html">Onboard a farmer</a></li>
+						<li style="background-color:orange"><a id="login"style="color:black" href="#signin">Login</a></li>
+					
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md"id="banner">
+					<div class="col-md" id="writeOnbanner">
+						<h1>We are building Nigeria's Largest farmer Database</h1>
+						<h5>Register a farmer</h5>
+					</div>
+				</div>
+				<div class="col" id="banner2">
+					<div class="col-6"id="signin" >
+                                                <div>
+                                                <input type="radio" id="registerbtn" name="regandlog"> Sign up
+                                                <input type="radio" id="loginbtn" name="regandlog"> Already have an account
+                                                </div>
+                                        </div>                  
+					<!--login starts here-->
+					 <div class="col-md-12" id="loginform">
+                                                <form method="POST" action="fo_interface.html">
+                                                        <div class="col mt-12">
+                                                                <h2 style="color:white">Login</h2>
+                                                                <hr style="height:3vh">
+                                                                <h4 style="color:white">Welcome Back !</h4>
+                                                        </div>
+
+                                                        <input type="text" name="officer_id" class="form-control" 
+							placeholder="Enter ID">
+
+					                <select name="role" class="form-control mt-2">
+                                                                <option value="">Select your role</option>
+                                                                <option value="2">Field officer</option>
+                                                                <option value="3">Input distribution officer</option>
+                                                                <option value="4">Collection officer</option>
+                                                        </select>
+                                                        <input type="password" name="password" class="form-control mt-2" placeholder=
+                                                                              "Enter your password " id="pwdinput">
+                                                        <button id="showpwd" type="button" class="form-control-sm mt-2" style="border-radius:10px;background-color:grey;color:white;"
+                                                                onclick="
+                                                                x = document.getElementById('pwdinput')
+                                                                if(x.type == 'password')
+                                                                {
+                                                                        x.type = 'text'
+                                                                        this.innerHTML = 'hide password'
+                                                                }
+                                                                else
+                                                                {
+                                                                        x.type = 'password'
+                                                                        this.innerHTML = 'show password'
+                                                                }
+                                                                ">show password</button>
+                                                        <div class="col mt-5">
+                                                                <input style="background-color:green;border-radius:20px;color:white" type="reset" name="reset">
+                                                                <input style="background-color:orange;border-radius:20px;margin-left:2vw"type="submit" name="submit">
+                                                        </div>
+
+                                                </form>
+					 </div><!--login ends-------------->
+
+					 <!-----register starts----------------->
+					 <div id="registerform"class="col-12 ">
+                                                <form method="POST" action="fo_reg.py">
+                                                        <div class="col mt-12" style="color:white">
+                                                                <h3 id="celebrate">Register</h3>
+                                                                <hr style="height:2vh">
+                                                                <h6>Please note: You should be 18 years and above to Register. Thankyou!</h6>
+                                                        </div>
+
+                                                <div class="reg" id="show1st"><!--show 1st starts-->
+
+                                                                <input type="text" name="full_name" class="form-control"
+                                                                        placeholder="first name">
+
+                                                                <input type="text" name="surname" class="form-control"placeholder="surname">
+
+                                                                <input type="text" name="other_name" class="form-control"
+                                                                        placeholder="other names">
+
+                                                                <input type="text" name="phone_number" class="form-control"placeholder="phone number">
+
+                                                                <input type="email" name="email" class="form-control"placeholder="email">
+
+                                                        <button style="background-color:orange;border-radius:20px;"type="button" 
+									id="next1">Next</button>
+                                                </div><!--show first ends-->
+
+                                                <div class="reg" id="show2nd"><!--show 2nd starts-->
+
+                                                                <select name="gender" class="form-control">
+                                                                        <option value=""> Select your gender</option>
+                                                                        <option value="Male">Male</option>
+                                                                        <option value="Female">Female</option>
+                                                                </select>
+
+                                                                <select type="text" class="form-control">
+                                                                        <option value="">Select your state</option>
+                                                                        <option value="1">Abia</option>
+                                                                        <option value="2">Adamawa</option>
+                                                                        <option value="3">Akwa Ibom</option>
+                                                                        <option value="4">Anambra</option>
+                                                                        <option value="5">Bauchi</option>
+                                                                        <option value="6">Bayelsa</option>
+                                                                        <option value="7">Benue</option>
+                                                                        <option value="8">Borno</option>
+                                                                        <option value="9">Cross River</option>
+                                                                        <option value="10">Delta</option>
+                                                                        <option value="11">Ebonyi</option>
+                                                                        <option value="12">Edo</option>
+                                                                        <option value="13">Ekiti</option>
+                                                                        <option value="14">Enugu</option>
+                                                                        <option value="15">Gombe</option>
+                                                                        <option value="16">Imo</option>
+                                                                        <option value="17">Jigawa</option>
+                                                                        <option value="18">Kaduna</option>
+                                                                        <option value="19">Kano</option>
+                                                                        <option value="20">Katsina</option>
+                                                                        <option value="21">Kebbi</option>
+                                                                        <option value="22">Kogi</option>
+                                                                        <option value="23">Kwara</option>
+                                                                        <option value="24">Lagos</option>
+                                                                        <option value="25">Nassarawa</option>
+                                                                        <option value="26">Niger</option>
+                                                                        <option value="27">Ogun</option>
+                                                                        <option value="28">Ondo</option>
+                                                                        <option value="28">Ondo</option>
+                                                                        <option value="29">Osun</option>
+                                                                        <option value="30">Oyo</option>
+                                                                        <option value="31">Plateau</option>
+                                                                        <option value="32">Rivers</option>
+                                                                        <option value="33">Sokoto</option>
+                                                                        <option value="34">Taraba</option>
+                                                                        <option value="35">Yobe</option>
+                                                                        <option value="36">Zamfara</option>
+                                                                        <option value="37">FCT</option>
+                                                                        <option value="38">Foreign</option>
+                                                                </select>
+
+                                                                <select name="lga_id" class="form-control">
+                                                                        <option value="">Select your LGA</option>
+                                                                        <option value="1"></option>
+                                                                        <option value="2"></option>
+                                                                </select>
+
+
+                                                                <select name="village_id" class="form-control">
+                                                                        <option value="">Select your village</option>
+                                                                        <option value="1"></option>
+                                                                        <option value="2"></option>
+                                                                </select>
+
+                                                                <input type="password" name="password" class="form-control" placeholder=
+                                                                             "Enter your password ">
+
+                                                                <input type="password" name="password" class="form-control"
+                                                                placeholder="Confirm password">
+
+                                                        <button style="background-color:orange;border-radius:20px;"type="button" id="back2">Back</button>
+                                                        <button style="background-color:green;color:white;border-radius:20px;"
+								type="button" id="next2">Next</button>
+                                                        </div><!--show 2nd ends-->
+
+                                                <div  class="reg"id="show3rd"><!--show 3rd-->
+                                                                <select name="educational_qualification" class="form-control">
+                                                                        <option value="">Highest Educational Qualification</option>
+                                                                        <option value="1">MSc/MBA/MPhil or equivalent</option>
+                                                                        <option value="2">BSc/HND/B.A or equivalent</option>
+                                                                        <option value="2">NCE/OND or equivalent</option>
+                                                                        <option value="2">SSCE or equivalent</option>
+                                                                        <option value="2">Primary School leaving certificate</option>
+                                                                </select>
+
+
+                                                                <input name="home_address" type="text"placeholder="Home address"
+                                                                class="form-control" >
+
+                                                                <input name="guarantor_name" type="text"
+                                                                              placeholder="Guarantor's full name" class="form-control" >
+
+                                                                <input name="phone_number" type="text"
+                                                                              placeholder="guarantor's phone number" class="form-control" >
+
+                                                                <input name="guarantor_address" type="text"
+                                                                             placeholder="guarantor's address" class="form-control" >
+
+                                                                <button style="background-color:orange;border-radius:20px;margin-left:2vw" type="button" id="back3">Back</button>
+                                                                <input style="background-color:orange;border-radius:20px;"
+									type="reset" name="reset">
+                                                                <input type="submit" name="submit" style="background-color:
+									green;color:white;border-radius:20px;margin-left:2vw"><br>
+                                                </div><!--show 3rd ends-->
+
+                                                </form>
+                                        </div>
+					 <!---register ends-->
+
+				</div><!--banner2 ends-->
+				<div id="whyager" class="col-md-12">
+			
+					<div class="col-md-6 offset-3" id="inner_whyager">
+						<h2>Why Ager ?</h2>
+						<p>Ager is solving the problem of lack of farmer visibility by creating a platform
+                                                where farmers can be onboarded irrespective of their locations around Nigeria inorder to 
+						easily receive the necessary credit/input. According to 
+						the Food and  Agricultural Organisation of the United Nations, Nigeria has 70.8 million 
+						hectares of agriculture land area with maize, cassava, guinea
+                                                corn, yam beans, millet and rice being the major crops. Inspite of this, only
+                                                57 percent of the 6.7 million metric tons of these crops are consumed in Nigeria annually is
+                                                locally produced leading to a deficit of about 3 million metric tons, which is either
+                                                imported or smuggled into the country illegally.This problem has been partly attributed to a
+                                                lack of adequate agricultural inputs in the right quality and quantity and lack of farmer
+                                                visibility.</p>
+					</div>
+					<div class="col-md-6 offset-3">
+						<img class="img-fluid"id="modelpic"src="images/model.png" style="border-radius:20px;
+							 margin-top:20vh">
+	                                </div>
+
+				</div>
+			</div>
+
+		</div>
+	<script src="jquery/jquery.min.js"></script>
+	<script type="text/javascript" language="javascript" >
+		$(document).ready(function(){
+                                                $('#registerbtn').prop('checked',true)
+                                                $('#loginform').hide()
+						$('#show2nd').hide()
+						$('#show3rd').hide()
+
+						$('#next1').click(function(){
+									$('#show2nd').show(1000)
+									$('#show1st').hide(1000)
+									  })
+						$('#next2').click(function(){
+									$('#show3rd').show(1000)
+									$('#show2nd').hide(1000)	
+							           	  })
+						$('#back3').click(function(){
+									$('#show2nd').show(1000)
+									$('#show3rd').hide(1000)
+
+									})
+						$('#back2').click(function(){
+									$('#show1st').show(1000)
+									$('#show2nd').hide(1000)
+									})
+                                                $('#loginbtn').click(function(){
+                                                                                $('#loginform').show(1000)
+										$('#registerform').hide(1000)
+                                                                                })
+                                                $('#registerbtn').click(function(){
+                                                                                $('#registerform').show(1000)
+                                                                                $('#loginform').hide(1000)
+                                              					})
+						$('#login').click(function(){
+									$('#loginbtn').prop('checked',true)
+									$('#loginform').show(1000)
+									$('#registerform').hide(1000)
+										})
+						$('#register').click(function(){
+                                                                        $('#registerbtn').prop('checked',true)
+                                                                        $('#registerform').show(1000)
+                                                                        $('#loginform').hide(1000)
+
+                                                                                })
+
+                                          })
+        </script>
+	</body>
+</html>
+

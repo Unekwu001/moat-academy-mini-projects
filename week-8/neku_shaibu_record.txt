@@ -1,0 +1,4 @@
+fullname: neku shaibu
+ Height: 1.9ft
+ Weight: 76.0kg 
+ Remark: Normal weight 
